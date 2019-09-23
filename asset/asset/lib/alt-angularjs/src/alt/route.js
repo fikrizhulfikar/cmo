@@ -100,7 +100,7 @@ alt.modules.route = angular.module('alt-route', ['ngRoute'])
                     }]
                 };
             };
-
+            $routeProvider.when('/auth/landing/pedoman',alt.defaultRoute + 'auth/landing/pedoman.html');
             $routeProvider.when('/', alt.defaultRoute != '' ? {redirectTo: alt.defaultRoute} : alt.routing());
             $routeProvider.when('/:altaction', alt.routing());
             $routeProvider.when('/:altcontroller/:altaction', alt.routing());
